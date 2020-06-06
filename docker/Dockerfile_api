@@ -1,0 +1,5 @@
+FROM python:3.8-buster
+ENV PYTHONUNBUFFERED 1
+ADD api-requirements.txt /tmp/
+RUN pip install -r /tmp/api-requirements.txt
+WORKDIR /opt/owm/api/
