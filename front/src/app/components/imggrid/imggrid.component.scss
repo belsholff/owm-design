@@ -1,0 +1,77 @@
+a {
+    text-decoration: none;
+    color: #f1f2f2;
+}
+
+.col-sm-12, .col-md-6, .col-lg-4, .col-xl-3 {
+    border-left: 1px solid #f1f2f2;
+    border-right: 1px solid #f1f2f2;
+    border-bottom: 2px solid #f1f2f2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ng-lazyloaded {
+    filter: none !important;
+    transition: filter 1s ease-out;
+}
+
+button, button:active {
+    background-color: transparent !important;
+    border: 0;
+    font-size: 2.5rem;
+}
+
+.gridItems {
+    height: 50vh;
+    display: none;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        filter: blur(5px);
+        transition: transform .5s ease;
+    }
+
+    a {
+        position: absolute;
+        z-index: 2;
+    }
+}
+
+.gridItems:hover {
+    img:not(.no-scale) {
+        transform: scale(1.05);
+        transition: transform .5s ease;
+    }
+
+    .interactiveContent {
+        background-color: rgba(0,0,0,.5);
+        p, span {
+            opacity: 1;
+            margin-left: 1.5rem;
+            transition: all .5s ease;
+        }
+    }
+}
+
+.interactiveContent {
+    p {
+        opacity: 0;
+        margin-left: 0;
+        font-size: 1.375rem;
+        font-weight: 500;
+        transition: all .5s ease;
+
+    }
+
+    span {
+        opacity: 0;
+        margin-left: 0;
+        font-size: .7375rem;
+        font-weight: 300;
+        transition: all .5s ease;
+    }
+}
+
