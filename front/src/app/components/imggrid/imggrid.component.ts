@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChildren, ElementRef, HostListener, Renderer2, QueryList, Input } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChildren, ElementRef, HostListener, Renderer2, QueryList, Input } from '@angular/core';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -16,11 +16,15 @@ export class ImggridComponent implements OnInit {
   public expansiveGrid : boolean;
   private columnsDefinition : any;
   public interactiveMode : boolean;
-  
+
   //css stuff declaration and definiton
   private screenSize : string;
   public cssColumns : any;
-  public more = faPlus; 
+  public more = faPlus;
+
+  //event destroyer
+  private destroyTouchStartEvent : () => void;
+  private destroyTouchEndEvent : () => void;
 
   //HTML access variables definition
   @ViewChildren('gridItem') private gridItems : QueryList<ElementRef>;
@@ -39,18 +43,25 @@ export class ImggridComponent implements OnInit {
 
     this.items = this.dataset.items;
     this.loadItemsPerSize = this.dataset.loadItemsPerSize;
-    this.expansiveGrid = this.dataset.expansiveGrid; 
+    this.expansiveGrid = this.dataset.expansiveGrid;
     this.columnsDefinition = this.dataset.columnsPerSize;
     this.interactiveMode = this.dataset.interactiveMode;
-    
+
     // more css stuff definition
     this.cssColumns = this.setColumnsClasses();
   }
 
   ngAfterViewInit() : void {
-    this.expandGrid();
+      this.setHoverLikeEffects();
+      this.expandGrid();
   }
 
+  ngOnDestroy() : void {
+      this.destroyTouchStartEvent();
+      this.destroyTouchEndEvent();
+  }
+
+  ///PRIVATE METHODS
   private setColumnsClasses() : string[] {
     //col-sm -> mobile devices (up to 576px) //col-md -> tablet devices (up to 768px) //col-lg -> monitor devices (over 992px)
     const classes = [];
@@ -61,6 +72,21 @@ export class ImggridComponent implements OnInit {
     return classes;
   }
 
+  //simulate mouse hover in 'interactiveMode: true' grids when a user touch the element on touchscreen devices
+  private setHoverLikeEffects() : void {
+      if(this.interactiveMode) {
+          for (let item of this.gridItems) {
+              this.destroyTouchStartEvent = this.renderer.listen(item.nativeElement, "touchstart", event => {
+                  this.renderer.addClass(item.nativeElement, 'simulate-hover');
+              });
+              this.destroyTouchEndEvent = this.renderer.listen(item.nativeElement, "touchend", event => {
+                  this.renderer.removeClass(item.nativeElement, 'simulate-hover');
+              });
+          }
+      }
+  }
+
+  //PUBLIC METHODS
   public expandGrid() : void {
     const gridArray = this.gridItems.toArray();
     for (let i = 0; i < this.loadItemsPerSize[this.screenSize]; i++) {

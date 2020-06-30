@@ -24,7 +24,6 @@ button, button:active {
 }
 
 .gridItems {
-    height: 50vh;
     display: none;
     overflow: hidden;
 
@@ -40,7 +39,25 @@ button, button:active {
     }
 }
 
-.gridItems:hover {
+@media(max-width: 767px) {
+    .gridItems {
+        height: 35vh;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .gridItems {
+        height: 38vh;
+    }
+}
+
+@media(min-width: 992px) {
+    .gridItems {
+        height: 48vh;
+    }
+}
+
+.gridItems:hover, .simulate-hover {
     img:not(.no-scale) {
         transform: scale(1.05);
         transition: transform .5s ease;
@@ -74,4 +91,3 @@ button, button:active {
         transition: all .5s ease;
     }
 }
-
