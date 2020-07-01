@@ -11,15 +11,17 @@ export class AppComponent {
   title = 'OWM Design';
   public header : any;
   public cover : any;
-  public grid1 : any;
-  public grid2 : any;
+  public imggrid1 : any;
+  public imggrid2 : any;
+  public txtgrid1 : any;
 
   constructor(private siteSettings: SiteSettingsService) { }
 
   ngOnInit() {
     this.header = this.siteSettings.header;
     this.cover = this.siteSettings.cover;
-    this.grid1 = this.siteSettings.grid1;
-    this.grid2 = this.siteSettings.grid2;
+    this.imggrid1 = this.siteSettings.imggrid1;
+    this.imggrid2 = this.siteSettings.imggrid2;
+    this.txtgrid1 = this.siteSettings.txtgrid1;
   }
 }

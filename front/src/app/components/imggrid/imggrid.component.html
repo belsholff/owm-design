@@ -1,4 +1,4 @@
-<div #gridWrapper class="row no-gutters">
+<div class="row no-gutters">
     <ng-container *ngFor="let item of items; let i = index">
         <div #gridItem class="gridItems" [ngClass]="cssColumns">
             <ng-container *ngIf="interactiveMode; else noInteractiveBlock">
