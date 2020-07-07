@@ -14,6 +14,7 @@ export class AppComponent {
   public imggrid1 : any;
   public imggrid2 : any;
   public txtgrid1 : any;
+  public footer : any;
 
   constructor(private siteSettings: SiteSettingsService) { }
 
@@ -23,5 +24,6 @@ export class AppComponent {
     this.imggrid1 = this.siteSettings.imggrid1;
     this.imggrid2 = this.siteSettings.imggrid2;
     this.txtgrid1 = this.siteSettings.txtgrid1;
+    this.footer = this.siteSettings.footer;
   }
 }

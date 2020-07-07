@@ -144,4 +144,13 @@ export class SiteSettingsService {
             },
         ]
     };
+
+    public footer : any = {
+        socialMedias: [
+            { name: "Instagram", url: "https://instagram.com/owm-design/", faIcon: "faInstagram" },
+            { name: "Behance", url: "https://behance.net/owm-design/", faIcon: "faBehance" },
+        ],
+        copyright: "All Rights Reserved",
+        bottomText: "Designed & Developed by OWM Design"
+    }
 }

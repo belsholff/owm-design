@@ -1,1 +1,14 @@
-<p>footer works!</p>
+<div class="row no-gutters align-items-center justify-content-center">
+    <div class="col-12 text-center">
+        <p class="mb-0">SIGA-NOS</p>
+    </div>
+    <div class="col-12 text-center">
+        <ng-container *ngFor="let sm of socialMedias">
+            <a target="_blank" href="{{sm.url}}">
+                <fa-icon [icon]="sm.faIcon"></fa-icon>
+            </a>
+        </ng-container>
+    </div>
+    <small class='col-12 text-center'>{{copyright}}</small>
+    <small class='col-12 text-center'>{{bottomText}}</small>
+</div>
