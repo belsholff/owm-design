@@ -145,6 +145,11 @@ export class SiteSettingsService {
         ]
     };
 
+    public jtronbtn : any = {
+        title: 'Solicitar Orçamento',
+        anchor: 'orçamento',
+    };
+
     public footer : any = {
         socialMedias: [
             { name: "Instagram", url: "https://instagram.com/owm-design/", faIcon: "faInstagram" },

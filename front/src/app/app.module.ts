@@ -14,10 +14,11 @@ import { CoverComponent } from './components/cover/cover.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ImggridComponent } from './components/imggrid/imggrid.component';
+import { JumbotronButtonComponent } from './components/jumbotron-button/jumbotron-button.component';
+import { TxtgridComponent } from './components/txtgrid/txtgrid.component';
 
 //Services
 import { SiteSettingsService } from "./services/site-settings.service";
-import { TxtgridComponent } from './components/txtgrid/txtgrid.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { TxtgridComponent } from './components/txtgrid/txtgrid.component';
     FooterComponent,
     ImggridComponent,
     TxtgridComponent,
+    JumbotronButtonComponent,
   ],
   imports: [
     AppRoutingModule,

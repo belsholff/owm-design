@@ -1,0 +1,15 @@
+a {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #808080;
+    padding: 2rem;
+    background-color: transparent !important;
+    border: 0;
+}
+
+a:hover, a:active {
+    color: #808080;
+    background-color: transparent;
+    text-decoration: underline;
+}
