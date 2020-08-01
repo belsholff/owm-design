@@ -20,6 +20,12 @@ import { TxtgridComponent } from './components/txtgrid/txtgrid.component';
 //Services
 import { SiteSettingsService } from "./services/site-settings.service";
 
+//Views
+import { FreebiesComponent } from './views/freebies/freebies.component';
+import { HomeComponent } from './views/home/home.component';
+import { OrcamentoComponent } from './views/orcamento/orcamento.component';
+import { PortfolioComponent } from './views/portfolio/portfolio.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +35,10 @@ import { SiteSettingsService } from "./services/site-settings.service";
     ImggridComponent,
     TxtgridComponent,
     JumbotronButtonComponent,
+    PortfolioComponent,
+    OrcamentoComponent,
+    FreebiesComponent,
+    HomeComponent,
   ],
   imports: [
     AppRoutingModule,
