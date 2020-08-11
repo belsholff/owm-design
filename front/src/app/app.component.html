@@ -1,5 +1,7 @@
-<div class="container-fluid p-0 no-gutters">
+<div id='heightController' class="container-fluid p-0 no-gutters">
     <owm-header [dataset]="header" class="d-flex align-items-center"></owm-header>
-    <router-outlet></router-outlet>
+    <div id=content [@fadeAnnimationTrigger]="prepareRoute(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
+    </div>
     <owm-footer [dataset]="footer" class="d-block"></owm-footer>
 </div>

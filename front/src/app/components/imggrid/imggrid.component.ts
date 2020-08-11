@@ -57,8 +57,10 @@ export class ImggridComponent implements OnInit {
   }
 
   ngOnDestroy() : void {
-      this.destroyTouchStartEvent();
-      this.destroyTouchEndEvent();
+       if(this.interactiveMode) {
+           this.destroyTouchStartEvent();
+           this.destroyTouchEndEvent();
+       }
   }
 
   ///PRIVATE METHODS
