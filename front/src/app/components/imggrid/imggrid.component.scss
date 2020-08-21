@@ -39,6 +39,7 @@ button, button:active {
     }
 }
 
+// tornar isso aqui dinâmico vindo do backend
 @media(max-width: 767px) {
     .gridItems {
         height: 35vh;

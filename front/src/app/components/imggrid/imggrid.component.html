@@ -3,7 +3,7 @@
         <div #gridItem class="gridItems" [ngClass]="cssColumns">
             <ng-container *ngIf="interactiveMode; else noInteractiveBlock">
                 <img class="img-fluid" loading="lazy" [lazyLoad]="item.url" style="background-image: url({{item.thumb}})">
-                <a routerLink="{{item.anchor}}" class="mb-0 d-flex flex-columns w-100 h-100">
+                <a [routerLink]="item.anchor" class="mb-0 d-flex flex-columns w-100 h-100">
                     <div class="row no-gutters w-100 align-items-end interactiveContent">
                         <div class="col-12 mb-4">
                             <p class="mb-0">{{item.title}}</p>

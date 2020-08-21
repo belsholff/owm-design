@@ -25,6 +25,7 @@ import { FreebiesComponent } from './views/freebies/freebies.component';
 import { HomeComponent } from './views/home/home.component';
 import { OrcamentoComponent } from './views/orcamento/orcamento.component';
 import { PortfolioComponent } from './views/portfolio/portfolio.component';
+import { PortfolioItemComponent } from './views/portfolio-item/portfolio-item.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { PortfolioComponent } from './views/portfolio/portfolio.component';
     OrcamentoComponent,
     FreebiesComponent,
     HomeComponent,
+    PortfolioItemComponent,
   ],
   imports: [
     AppRoutingModule,

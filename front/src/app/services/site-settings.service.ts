@@ -60,87 +60,87 @@ export class SiteSettingsService {
     public imggrid2 : any = {
         columnsPerSize : { sm: 1, md: 2, lg: 4 },
         loadItemsPerSize: { sm: 3, md: 4, lg: 8 },
-        interactiveMode: false,
+        interactiveMode: true,
         expansiveGrid: true,
         items: [
             {
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '2']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '3']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '4']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },{
                 thumb: `https://picsum.photos/id/${rand}/22/17`, url: `https://picsum.photos/id/${rand}/645/483`,
-                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: "página1"
+                title: "Pudim", subtitle: "Lorem ipsum dot amet casi enterium.", anchor: ['portfólio', 'item', '1']
             },
         ]
     };
@@ -157,5 +157,27 @@ export class SiteSettingsService {
         ],
         copyright: "All Rights Reserved",
         bottomText: "Designed & Developed by OWM Design"
+    }
+
+    public portfoliogrid1 : any = {
+        columnsPerSize : { sm: 1, md: 1, lg: 1 },
+        loadItemsPerSize: { sm: 6, md: 6, lg: 6 },
+        interactiveMode: false,
+        expansiveGrid: false,
+        items: [
+            {
+                name: "primeiro", url: `https://picsum.photos/id/${rand + 1}/1400/1087`, thumb: `https://picsum.photos/id/${rand + 1}/48/38`
+            },{
+                name: "segundo", url: `https://picsum.photos/id/${rand + 2}/1400/1087`, thumb: `https://picsum.photos/id/${rand + 2}/48/38`
+            },{
+                name: "terceiro", url: `https://picsum.photos/id/${rand + 3}/1400/1087`, thumb: `https://picsum.photos/id/${rand + 3}/48/38`
+            },{
+                name: "quarto", url: `https://picsum.photos/id/${rand + 4}/1400/1087`, thumb: `https://picsum.photos/id/${rand + 4}/48/38`
+            },{
+                name: "quinto", url: `https://picsum.photos/id/${rand + 5}/1400/1087`, thumb: `https://picsum.photos/id/${rand + 5}/48/38`
+            },{
+                name: "sexto", url: `https://picsum.photos/id/${rand + 6}/1400/1087`, thumb: `https://picsum.photos/id/${rand + 6}/48/38`
+            }
+        ]
     }
 }
