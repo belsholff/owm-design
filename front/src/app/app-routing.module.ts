@@ -10,17 +10,17 @@ import { PortfolioItemComponent } from './views/portfolio-item/portfolio-item.co
 const routes: Routes = [
     { path: '', component: HomeComponent, data: { animationState: "Home" } },
     { path: 'home', redirectTo: '', pathMatch: 'full' },
-    { path: 'portfólio', children: [
+    { path: 'portfolio', children: [
         { path: "", component: PortfolioComponent, data: { animationState: "Portfólio" } },
         { path: "item/:id", component: PortfolioItemComponent, data: { animationState: "PortfólioItem" } }
     ]},
-    { path: 'orçamento', component: OrcamentoComponent, data: { animationState: "Orçamento" } },
+    { path: 'orcamento', component: OrcamentoComponent, data: { animationState: "Orçamento" } },
     { path: 'freebies', component: FreebiesComponent, data: { animationState: "Freebies" } },
     { path: '**', redirectTo: '', data: { animationState: "Any" } },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { enableTracing: false, scrollPositionRestoration: 'top' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

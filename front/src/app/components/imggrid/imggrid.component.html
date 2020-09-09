@@ -1,8 +1,11 @@
-<div class="row no-gutters">
+<ng-container *ngIf="carouselMode">
+    <fa-icon id="back" [icon]="back" (click)='goBack()'></fa-icon>
+</ng-container>
+<div #carouselContainer class="row no-gutters" [ngClass]="cssCarousel">
     <ng-container *ngFor="let item of items; let i = index">
-        <div #gridItem class="gridItems" [ngClass]="cssColumns">
+        <div #gridItem class="gridItems justify-content-center" [ngClass]="cssColumns">
             <ng-container *ngIf="interactiveMode; else noInteractiveBlock">
-                <img class="img-fluid" loading="lazy" [lazyLoad]="item.url" style="background-image: url({{item.thumb}})">
+                <img class="img-fluid w-100" style="background-image: url({{item.thumb}})" [lazyLoad]="item.url">
                 <a [routerLink]="item.anchor" class="mb-0 d-flex flex-columns w-100 h-100">
                     <div class="row no-gutters w-100 align-items-end interactiveContent">
                         <div class="col-12 mb-4">
@@ -13,11 +16,14 @@
                 </a>
             </ng-container>
             <ng-template #noInteractiveBlock>
-                <img class="img-fluid no-scale" loading="lazy" [lazyLoad]="item.url" style="background-image: url({{item.thumb}})">
+                <img class="img-fluid w-100 no-scale" loading="lazy" [lazyLoad]="item.url" style="background-image: url({{item.thumb}})">
             </ng-template>
         </div>
     </ng-container>
 </div>
+<ng-container *ngIf="carouselMode">
+    <fa-icon id="foward" [icon]="foward" (click)='goFoward()'></fa-icon>
+</ng-container>
 <div class="row no-gutters justify-content-center" *ngIf="expansiveGrid">
     <button (click)='expandGrid()' class="my-4 btn btn-light shadow-none rounded-circle font-weight-bold">
         <fa-icon [icon]="more"></fa-icon>

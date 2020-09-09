@@ -1,0 +1,59 @@
+owm-imggrid {
+    margin: 5rem 10rem 2.5rem 10rem;
+}
+
+owm-txtgrid {
+    margin: 0 10rem;
+}
+
+owm-back-button {
+    margin: 5rem 10rem;
+}
+
+owm-jumbotron-button {
+    margin: 3rem;
+}
+
+#carousel {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+@media(max-width: 575px) {
+    owm-txtgrid {
+        margin: 0 2rem;
+    }
+
+    owm-jumbotron-button {
+        margin: 0 0 2rem 0;
+    }
+
+    owm-imggrid {
+        margin: 0;
+    }
+}
+
+@media(min-width: 576px) and (max-width: 991px) {
+    owm-imggrid {
+        margin: 0;
+    }
+
+    owm-txtgrid {
+        margin: 0 5rem;
+    }
+
+    owm-jumbotron-button {
+        margin: 0 0 2rem 0;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1366px) {
+    owm-imggrid {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    owm-txtgrid {
+        margin: 0 2.5rem;
+    }
+}

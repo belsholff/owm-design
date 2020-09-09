@@ -1,0 +1,25 @@
+@media(min-width: 992px){
+    owm-txtgrid {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    owm-txtgrid {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+}
+
+@media(max-width: 767px) {
+    owm-txtgrid {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+owm-txtgrid {
+    min-height: 75vh;
+    border-bottom: 2px solid #f1f2f2;
+}

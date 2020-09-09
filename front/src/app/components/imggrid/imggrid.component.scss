@@ -1,3 +1,7 @@
+:host {
+    position: relative;
+}
+
 a {
     text-decoration: none;
     color: #f1f2f2;
@@ -7,6 +11,9 @@ a {
     border-left: 1px solid #f1f2f2;
     border-right: 1px solid #f1f2f2;
     border-bottom: 2px solid #f1f2f2;
+}
+
+img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -26,6 +33,7 @@ button, button:active {
 .gridItems {
     display: none;
     overflow: hidden;
+    flex-shrink: 0;
 
     img {
         object-fit: cover;
@@ -36,25 +44,6 @@ button, button:active {
     a {
         position: absolute;
         z-index: 2;
-    }
-}
-
-// tornar isso aqui dinâmico vindo do backend
-@media(max-width: 767px) {
-    .gridItems {
-        height: 35vh;
-    }
-}
-
-@media(min-width: 768px) and (max-width: 991px) {
-    .gridItems {
-        height: 38vh;
-    }
-}
-
-@media(min-width: 992px) {
-    .gridItems {
-        height: 48vh;
     }
 }
 
@@ -90,5 +79,54 @@ button, button:active {
         font-size: .7375rem;
         font-weight: 300;
         transition: all .5s ease;
+    }
+}
+
+.carouselWrapper {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: opacity .5s linear;
+
+}
+
+#back, #foward {
+    position: absolute;
+    top: 40%;
+    font-size: 3rem;
+    z-index: 10;
+}
+
+#back:hover, #foward:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+@media(min-width: 992px) {
+    #back {
+        left: -3%;
+    }
+
+    #foward {
+        right: -3%;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    #back {
+        left: -4%;
+    }
+
+    #foward {
+        right: -4%;
+    }
+}
+
+@media(max-width: 767px) {
+    #back {
+        left: -7%;
+    }
+
+    #foward {
+        right: -7%;
     }
 }

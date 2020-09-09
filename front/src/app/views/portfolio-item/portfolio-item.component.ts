@@ -10,7 +10,10 @@ import { SiteSettingsService } from "../../services/site-settings.service";
 })
 export class PortfolioItemComponent implements OnInit {
     public id : string;
-    public portfoliogrid1 : any[];
+    public portfoliogrid1 : any;
+    public portfoliotxtgrid1 : any;
+    public jtronbtn : any;
+    public portfoliogrid2 : any;
 
     constructor(private activatedRoute: ActivatedRoute, private siteSettings: SiteSettingsService) { }
 
@@ -20,6 +23,9 @@ export class PortfolioItemComponent implements OnInit {
 
             // Buscar no banco os dados de this.id
             this.portfoliogrid1 = this.siteSettings.portfoliogrid1;
+            this.portfoliotxtgrid1 = this.siteSettings.portfoliotxtgrid1;
+            this.jtronbtn = this.siteSettings.jtronbtn;
+            this.portfoliogrid2 = this.siteSettings.portfoliogrid2;
         });
     }
 
